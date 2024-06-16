@@ -3,13 +3,14 @@ import React from "react";
 import { useSetRecoilState } from "recoil";
 import userAtom from "../atoms/userAtom";
 import useShowToast from "../hooks/useShowToast";
+import FiLogout from "react-icons/fi";
 
 const LogoutButton = () => {
   const setUser = useSetRecoilState(userAtom);
   const showToast = useShowToast();
   const handleLogout = async () => {
     try {
-      const res =await fetch("/api/users/logout", {
+      const res = await fetch("/api/users/logout", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -23,7 +24,7 @@ const LogoutButton = () => {
       localStorage.removeItem("user-friendfuse");
       setUser(null);
     } catch (error) {
-        showToast("Error", data.error, "error");
+      showToast("Error", data.error, "error");
     }
   };
   return (
@@ -34,7 +35,7 @@ const LogoutButton = () => {
       size={"sm"}
       onClick={handleLogout}
     >
-      Logout
+      <FiLogout size={20} />
     </Button>
   );
 };
