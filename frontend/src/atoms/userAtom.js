@@ -2,6 +2,6 @@ import { atom } from "recoil";
 
 const userAtom = atom({
   key: "userAtom",
-  default: JSON.parse(localStorage.getItem("userfriendfuse")),
+  default: JSON.parse(localStorage.getItem("user-friendfuse")),
 });
 export default userAtom;

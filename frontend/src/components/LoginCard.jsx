@@ -43,7 +43,7 @@ export default function LoginCard() {
         showToast("Error", data.error, "error");
         return;
       }
-      localStorage.setItem("use-friendfuse", JSON.stringify(data));
+      localStorage.setItem("user-friendfuse", JSON.stringify(data));
       setUser(data);
     } catch (error) {
       showToast("Error", data.error, "error");
