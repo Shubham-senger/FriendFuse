@@ -2,11 +2,9 @@ import React, { useState } from "react";
 import SignupCard from "../components/SignupCard";
 import LoginCard from "../components/LoginCard";
 import { useRecoilValue } from "recoil";
-import authScreenAtom from "../atoms/authAtom";
-
+import authScreenAtom from "../atoms/authAtom.js";
 const AuthPage = () => {
   const authScreenState = useRecoilValue(authScreenAtom);
-  console
   return (
     <>
       {authScreenState==="login"? <LoginCard/>:<SignupCard/>}
