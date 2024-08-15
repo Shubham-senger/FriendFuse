@@ -76,7 +76,7 @@ const Post = ({ post, postedBy }) => {
 						{post.replies.length === 0 && <Text textAlign={"center"}>🥱</Text>}
 						{post.replies[0] && (
 							<Avatar
-								size='xs'
+								size='s'
 								name='John doe'
 								src={post.replies[0].userProfilePic}
 								position={"absolute"}
@@ -88,7 +88,7 @@ const Post = ({ post, postedBy }) => {
 
 						{post.replies[1] && (
 							<Avatar
-								size='xs'
+								size='s'
 								name='John doe'
 								src={post.replies[1].userProfilePic}
 								position={"absolute"}
@@ -100,7 +100,7 @@ const Post = ({ post, postedBy }) => {
 
 						{post.replies[2] && (
 							<Avatar
-								size='xs'
+								size='s'
 								name='John doe'
 								src={post.replies[2].userProfilePic}
 								position={"absolute"}

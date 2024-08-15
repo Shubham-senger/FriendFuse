@@ -107,7 +107,7 @@ export default function LoginCard() {
             <Stack spacing={10} pt={2}>
               <Button
                 loadingText="Logging in"
-                size="lg"
+                size="m"
                 bg={useColorModeValue("gray.600", "gray.700")}
                 color={"white"}
                 _hover={{

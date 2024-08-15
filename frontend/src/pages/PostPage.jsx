@@ -73,9 +73,9 @@ const PostPage = () => {
 		<>
 			<Flex>
 				<Flex w={"full"} alignItems={"center"} gap={3}>
-					<Avatar src={user.profilePic} size={"md"} name='Mark Zuckerberg' />
+					<Avatar src={user.profilePic} size={"l"} name='Mark Zuckerberg' />
 					<Flex>
-						<Text fontSize={"sm"} fontWeight={"bold"}>
+						<Text fontSize={"m"} fontWeight={"bold"}>
 							{user.username}
 						</Text>
 						<Image src='/verified.png' w='4' h={4} ml={4} />
@@ -95,7 +95,7 @@ const PostPage = () => {
 			<Text my={3}>{currentPost.text}</Text>
 
 			{currentPost.img && (
-				<Box borderRadius={6} overflow={"hidden"} border={"1px solid"} borderColor={"gray.light"}>
+				<Box borderRadius={6} overflow={"hidden"} border={"1.5px solid"} borderColor={"gray.light"}>
 					<Image src={currentPost.img} w={"full"} />
 				</Box>
 			)}
@@ -109,7 +109,7 @@ const PostPage = () => {
 			<Flex justifyContent={"space-between"}>
 				<Flex gap={2} alignItems={"center"}>
 					<Text fontSize={"2xl"}>👋</Text>
-					<Text color={"gray.light"}>Get the app to like, reply and post.</Text>
+					<Text color={"gray"}>Get the app to like, reply and post.</Text>
 				</Flex>
 				<Button>Get</Button>
 			</Flex>

@@ -67,7 +67,7 @@ const UserHeader = ({ user }) => {
     <VStack gap={4} alignItems={"start"}>
       <Flex justifyContent={"space-between"} w={"full"}>
         <Box>
-          <Text fontSize={"2xl"} fontWeight={"bold"}>
+          <Text fontSize={"xl"} fontWeight={"bold"}>
             {user.name}
           </Text>
           <Flex gap={2} alignItems={"center"}>

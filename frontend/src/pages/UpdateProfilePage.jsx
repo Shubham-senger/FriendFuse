@@ -75,7 +75,7 @@ export default function UpdateProfilePage() {
               <Center>
                 <Avatar
                   size="xl"
-                  boxShadow={"md"}
+                  boxShadow={"l"}
                   src={imgUrl || user.profilePic}
                 />
               </Center>
@@ -95,7 +95,7 @@ export default function UpdateProfilePage() {
           <FormControl>
             <FormLabel>Full name</FormLabel>
             <Input
-              placeholder="John Doe"
+              placeholder="Full Name"
               value={inputs.name}
               onChange={(e) => setInputs({ ...inputs, name: e.target.value })}
               _placeholder={{ color: "gray.500" }}
@@ -105,7 +105,7 @@ export default function UpdateProfilePage() {
           <FormControl>
             <FormLabel>User name</FormLabel>
             <Input
-              placeholder="johndoe"
+              placeholder="username"
               value={inputs.username}
               onChange={(e) =>
                 setInputs({ ...inputs, username: e.target.value })

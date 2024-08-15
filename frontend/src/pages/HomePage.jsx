@@ -33,13 +33,13 @@ const HomePage = () => {
 	}, [showToast, setPosts]);
 
 	return (
-		<Flex gap='10' alignItems={"flex-start"}>
+		<Flex gap='11' alignItems={"flex-start"}>
 			<Box flex={70}>
 				{!loading && posts.length === 0 && <h1>Follow some users to see the feed</h1>}
 
 				{loading && (
 					<Flex justify='center'>
-						<Spinner size='xl' />
+						<Spinner size='2xl' />
 					</Flex>
 				)}
 
